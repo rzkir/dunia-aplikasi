@@ -1,0 +1,15 @@
+diff --git a/node_modules/unenv/dist/runtime/npm/whatwg-url/index.mjs b/node_modules/unenv/dist/runtime/npm/whatwg-url/index.mjs
+index 308610f..b72820e 100644
+--- a/node_modules/unenv/dist/runtime/npm/whatwg-url/index.mjs
++++ b/node_modules/unenv/dist/runtime/npm/whatwg-url/index.mjs
+@@ -2,6 +2,10 @@
+ import { notImplemented } from "../../_internal/utils.mjs";
+ export const URL = globalThis.URL;
+ export const URLSearchParams = globalThis.URLSearchParams;
++export default {
++  URL,
++  URLSearchParams,
++};
+ export const parseURL = /* @__PURE__ */ notImplemented("whatwg-url.parseURL");
+ export const basicURLParse = /* @__PURE__ */ notImplemented("whatwg-url.basicURLParse");
+ export const serializeURL = /* @__PURE__ */ notImplemented("whatwg-url.serializeURL");
